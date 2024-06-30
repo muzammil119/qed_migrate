@@ -1,0 +1,32 @@
+id: qedcity
+label: 'City Migration'
+migration_group: qed_entity
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'public://cities.json'
+  item_selector: '[*]'
+  fields:
+    - name: '_id'
+      label: 'ID'
+    - name: 'city'
+      label: 'City'
+    - name: 'loc'
+      label: 'Location'
+    - name: 'pop'
+      label: 'Population'
+    - name: 'state'
+      label: 'State'
+  ids:
+    _id:
+      type: string
+destination:
+  plugin: 'entity:qedcity'
+process:
+  _id: _id
+  city: city
+  loc: loc
+  pop: pop
+  state: state

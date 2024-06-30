@@ -1,0 +1,11 @@
+qed_entity.qedcity_display:
+  path: '/admin/config/qed_entity/qedcity-display'
+  defaults:
+    _controller: '\Drupal\qed_entity\Controller\QedcityController::display'
+    _title: 'Migrated Qedcity Data'
+  requirements:
+    _permission: 'administer site configuration'
+
+
+
+

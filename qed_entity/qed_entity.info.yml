@@ -1,0 +1,7 @@
+name: 'QED Entity Migration'
+type: module
+description: 'A module to migrate data from JSON to a custom entity.'
+core_version_requirement: ^8 || ^9
+package: Custom
+dependencies:
+  - drupal:migrate

@@ -1,0 +1,7 @@
+qed_entity.qedcity_display:
+  title: 'Migrated Qedcity Data'
+  description: 'View the migrated Qedcity data.'
+  parent: system.admin_config_development
+  route_name: qed_entity.qedcity_display
+  weight: 110
+
